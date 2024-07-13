@@ -105,6 +105,10 @@ Well now that you are officially here, lemme introduce you to some k-pop terms s
 20. **Stray Kids** : They became the first act from S. Korea to walk the MET carpet. They have an amazing discography and 2 of their members are Australian! Can they get any cuter? NAURRRR
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3IzMm13dXczbGx3cDY3d3JiZGQwcGQycW15eGc3b2RrNzR3aTV0YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4pBv39N0gGohc1vVJX/giphy.gif)
 
+21. **Record** : Well, you record records, don't ya? So, to keep in mind the amazing wordplay, I have used this as the keyword to read any inputs from the user! ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXEwa28yNWxnNWhiM2VmZjVxbjRiZG1jNWZ1ejRodWtsZGh4aThrOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hno1z1JFTiq0cNxpHl/giphy.gif)
+
+22. **Playback** : It is the word for the technology that is used to listen to what artists have just recorded. So, I used the word to represent the writing operation, i.e., the language just tells you what you told it. Simple! ![](https://media.giphy.com/media/MKgpB90PRFKh2/giphy.gif?cid=790b7611f60m966hzbbgczch7a36ky5m19gmqaoctelmqbjr&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
 # The official Documentation of the ARMY++ Language
 Yes, that is the name of the project itself. The language is called ARMY++
 Let us become more serious and get started with the docs!
@@ -124,6 +128,7 @@ Let us become more serious and get started with the docs!
 	8. [Conditional Statements](#conditional-statements-)
 	9. [Loops](#loops-)
 	10. [Print Statements](#print-statements-)
+  11. [Read and Write Statements](#reading-and-writing-user-inputs)
 3. [Error Handling Capabilities](#error-handling-capabilities-)
 4. [Example Programs](#example-programs-)
 5. [Future Enhancements](#future-enhancements)
@@ -264,6 +269,21 @@ The interpreter uses a custom `KpopInterpreterError` exception to handle runtime
 4. When encountering runtime errors, check for common issues like uninitialized variables or incorrect mathematical operations.
 
 5. If you encounter an "Unexpected error" message, it may indicate a bug in the interpreter itself. In such cases, please report the issue to the ARMY++ development team.
+
+### Reading and writing user inputs
+ARMY++ supports basic input and output operations:
+- **Input**: Use the `record` keyword to get user input.
+- **Output**: Use the `playback` keyword to display output without a newline.
+
+Example:
+```ARMY++
+idol name = gg "" kpop
+saranghae("What's your name? ") kpop
+record(name) kpop
+playback("Hello, ") kpop
+playback(name) kpop
+playback("! Welcome to K-pop Programming!\n") kpop
+```
 
 ### Future Enhancements
 
@@ -439,6 +459,25 @@ Total members in all groups:
 That's a lot of idols!
 ```
 
+7. **Reading and Writing User Input** : 
+```ARMY++
+annyeong main() {
+    idol favorite_group = gg "" kpop
+    saranghae("What's your favorite K-pop group? ") kpop
+    record(favorite_group) kpop
+    playback("Wow! ") kpop
+    playback(favorite_group) kpop
+    playback(" is a great choice!\n") kpop
+}
+```
+
+The outout will be : 
+```ARMY++
+What's your favourite K-pop group? BTS
+Wow!
+BTS is a great choice!
+```
+
 ## Future Enhancements
 
 While ARMY++ already offers a unique and engaging programming experience, we have exciting plans to further develop and expand the language. Here are some potential enhancements we're considering for future versions:
@@ -455,33 +494,30 @@ While ARMY++ already offers a unique and engaging programming experience, we hav
    - Develop 'idol_group' as a class construct
    - Use 'trainee' for object instantiation
 
-4. File I/O Operations
-   - Add 'record' and 'playback' keywords for file writing and reading
-
-5. Standard Library
+4. Standard Library
    - Create a 'lightstick' module with common utility functions
    - Implement a 'fanchant' module for string manipulation
 
-6. Error Handling and Debugging
+5. Error Handling and Debugging
    - Introduce 'soundcheck' as a try-catch mechanism for exception handling
    - Develop a 'rehearsal' mode for step-by-step debugging
 
-7. Concurrency
+6. Concurrency
    - Implement 'dance_practice' for multi-threading capabilities
 
-8. Package Management
+7. Package Management
    - Create an 'agency' system for managing external libraries and dependencies
 
-9. Interactive Development Environment (IDE)
+8. Interactive Development Environment (IDE)
    - Develop a 'studio' IDE specifically designed for ARMY++ with syntax highlighting and auto-completion
 
-10. Performance Optimization
+9. Performance Optimization
     - Implement a 'comeback_stage' phase for code optimization before execution
 
-11. Web Development
+10. Web Development
     - Create 'fansite' libraries for building web applications in ARMY++
 
-12. Mobile App Development
+11. Mobile App Development
     - Develop 'fancam' tools for creating mobile applications using ARMY++
 
 These enhancements aim to make ARMY++ more powerful, versatile, and enjoyable for developers while maintaining its unique K-pop theme. I'm excited about the future of ARMY++ and welcome community feedback on these proposed features!
@@ -491,7 +527,7 @@ These enhancements aim to make ARMY++ more powerful, versatile, and enjoyable fo
 2. Open them up into your favourite code editor.
 3. Run all the files to make sure you have no errors (This is a safety precaution. Feel free to skip this step)
 4. Run the main file which is aptly named "main.py"
-5. From there, you can write your program in the terminal and start using the ARMY++ language (or) you can just write the program in ARMY++ in a separate file and save it with a '.kpop' extension to run it using the main.py file
+5. From there, you can write your program in the terminal and start using the ARMY++ language.
 6. If you want to see any changes made to the language itself, or to the documentation, feel free to fork this repo and make the changes that you would like to see implemented.
 
 PS : Don't hesitate to reach out to me on Instagram, my handle is uma_dhatri! Hope to see some amazing changes made to the language!

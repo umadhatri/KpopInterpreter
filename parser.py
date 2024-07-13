@@ -29,8 +29,18 @@ def p_statement(p):
                  | fighting
                  | dance
                  | comeback
-                 | saranghae'''
+                 | saranghae
+                 | record
+                 | playback'''
     p[0] = p[1]
+
+def p_record(p):
+    '''record : RECORD LPAREN ID RPAREN KPOP'''
+    p[0] = ('record', p[3])
+
+def p_playback(p):
+    '''playback : PLAYBACK LPAREN expression RPAREN KPOP'''
+    p[0] = ('playback', p[3])
 
 def p_assignment(p):
     '''assignment : IDOL ID OP expression KPOP'''
@@ -124,6 +134,12 @@ if __name__ == "__main__":
       } daebak {
         saranghae(x) kpop
       }
+      idol name = gg "" kpop
+        saranghae("What's your name? ") kpop
+        record(name) kpop
+        playback("Hello, ") kpop
+        playback(name) kpop
+        playback("! Welcome to K-pop Programming!\\n") kpop
     }
     '''
     result = parser.parse(data, lexer=lexer)
