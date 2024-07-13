@@ -1,5 +1,5 @@
 # interpreter.py
-
+import sys
 from parser import parser
 from lexer import lexer
 
@@ -45,6 +45,10 @@ class KpopInterpreter:
                 self.execute_for(statement)
             elif statement_type == 'saranghae':
                 self.execute_print(statement)
+            elif statement_type == 'record':
+                self.execute_record(statement)
+            elif statement_type == 'playback':
+                self.execute_playback(statement)
             else:
                 raise KpopInterpreterError(f"Unknown statement type: {statement_type}")
         except KpopInterpreterError as e:
@@ -147,6 +151,17 @@ class KpopInterpreter:
         except Exception as e:
             print(f"Unexpected Error : {e}")
             return None
+        
+    def execute_record(self, statement):
+        _, var_name = statement
+        user_input = input()
+        self.variables[var_name] = user_input
+
+    def execute_playback(self, statement):
+        _, value = statement
+        output = self.evaluate_expression(value)
+        print(output, end='')
+        sys.stdout.flush()
     
     def interpret(self, code):
         try:
@@ -187,6 +202,12 @@ if __name__ == "__main__":
         saranghae("x is lesser than 5") kpop
         }
       }
+      idol name = gg "" kpop
+        saranghae("What's your name? ") kpop
+        record(name) kpop
+        playback("Hello, ") kpop
+        playback(name) kpop
+        playback("! Welcome to K-pop Programming!\\n") kpop
     }
     '''
     try :

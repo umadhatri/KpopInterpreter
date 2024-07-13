@@ -6,7 +6,8 @@ import ply.yacc as yacc
 tokens = (
     'ID', 'NUMBER', 'STRING', 'BOOLEAN', 'OP', 'LPAREN', 'RPAREN', 'LBRACE', 'RBRACE', 
     'ANNYEONG', 'IDOL', 'KPOP', 'FIGHTING', 'SARANGHAE', 'DAEBAK', 'DANCE', 'COMEBACK',
-    'SHINEE', 'GG', 'IKON', 'BTS', 'BP', 'TWICE', 'RV', 'EXO', 'BB', 'JYP', 'SJ', 'SKZ'
+    'SHINEE', 'GG', 'IKON', 'BTS', 'BP', 'TWICE', 'RV', 'EXO', 'BB', 'JYP', 'SJ', 'SKZ',
+    'RECORD', 'PLAYBACK'
 )
 
 # Regular expression rules for simple tokens
@@ -57,7 +58,9 @@ reserved = {
     'sj': 'SJ',
     'bb': 'BB',
     'jyp': 'JYP',
-    'skz': 'SKZ'
+    'skz': 'SKZ',
+    'record' : 'RECORD',
+    'playback' : 'PLAYBACK'
 }
 
 # Define a rule for booleans
@@ -87,6 +90,10 @@ def t_STRING(t):
 def t_newline(t):
     r'\n+'
     t.lexer.lineno += len(t.value)
+
+# A string for record and playback
+t_RECORD = r'record'
+t_PLAYBACK = r'playback'
 
 # A string containing ignored characters (spaces and tabs)
 t_ignore = ' \t'
@@ -122,6 +129,12 @@ if __name__ == "__main__":
       } daebak {
         saranghae("x is less than 5") kpop
       }
+      idol name = gg "" kpop
+      saranghae("What's your name? ") kpop
+      record(name) kpop
+      playback("Hello, ") kpop
+      playback(name) kpop
+      playback("! Welcome to K-pop Programming!\\n") kpop
     }
     '''
 
