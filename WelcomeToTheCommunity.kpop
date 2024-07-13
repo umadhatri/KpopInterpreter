@@ -1,0 +1,8 @@
+annyeong main() {
+    idol name = gg "" kpop
+    saranghae("What's your name? ") kpop
+    record(name) kpop
+    playback("Hello, ") kpop
+    playback(name) kpop
+    playback("! Welcome to K-pop Programming!\\n") kpop
+}
