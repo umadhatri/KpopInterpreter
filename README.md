@@ -491,7 +491,7 @@ These enhancements aim to make ARMY++ more powerful, versatile, and enjoyable fo
 2. Open them up into your favourite code editor.
 3. Run all the files to make sure you have no errors (This is a safety precaution. Feel free to skip this step)
 4. Run the main file which is aptly named "main.py"
-5. From there, you can write your program in the terminal and start using the ARMY++ language.
+5. From there, you can write your program in the terminal and start using the ARMY++ language (or) you can just write the program in ARMY++ in a separate file and save it with a '.kpop' extension to run it using the main.py file
 6. If you want to see any changes made to the language itself, or to the documentation, feel free to fork this repo and make the changes that you would like to see implemented.
 
 PS : Don't hesitate to reach out to me on Instagram, my handle is uma_dhatri! Hope to see some amazing changes made to the language!
