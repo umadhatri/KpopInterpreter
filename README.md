@@ -6,6 +6,7 @@ This documentation was written by me (yes, a bit too vain if you ask me) and I w
 1. The story of the language :  [The Story](README.md/#the-army-language)
 2. The reason for choosing the keywords that I did :  [The choice of keywords](README.md/#the-story-of-the-keywords)
 3. The real real docs : [The official documentation of The ARMY Project](README.md/#the-official-documentation-of-the-army-language)
+4. How to run the language? : [Installation Guide and setting up](README.md/#installation-guide-and-setting-up)
 
 # The ARMY++ Language
 Now, this section details why I wanted to create the language and the entire (not so) sob story of what went down. If you think I could've done something better, lemme know 'cause future me will save a lot of mental breakdowns and tears while doing another project.
@@ -484,3 +485,13 @@ While ARMY++ already offers a unique and engaging programming experience, we hav
     - Develop 'fancam' tools for creating mobile applications using ARMY++
 
 These enhancements aim to make ARMY++ more powerful, versatile, and enjoyable for developers while maintaining its unique K-pop theme. I'm excited about the future of ARMY++ and welcome community feedback on these proposed features!
+
+## Installation Guide and Setting Up
+1. Install all the files in this repo onto your device.
+2. Open them up into your favourite code editor.
+3. Run all the files to make sure you have no errors (This is a safety precaution. Feel free to skip this step)
+4. Run the main file which is aptly named "main.py"
+5. From there, you can write your program in the terminal and start using the ARMY++ language.
+6. If you want to see any changes made to the language itself, or to the documentation, feel free to fork this repo and make the changes that you would like to see implemented.
+
+PS : Don't hesitate to reach out to me on Instagram, my handle is uma_dhatri! Hope to see some amazing changes made to the language!
