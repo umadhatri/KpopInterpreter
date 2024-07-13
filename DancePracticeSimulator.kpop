@@ -1,0 +1,21 @@
+annyeong main() {
+  idol practice_hours = shinee 0 kpop
+  idol mastery = shinee 0 kpop
+  
+  dance(mastery jyp shinee 100) {
+    saranghae(gg "Practicing...") kpop
+    idol practice_hours = practice_hours bts shinee 1 kpop
+    idol mastery = mastery bts shinee 10 kpop
+    
+    fighting(practice_hours ikon shinee 5) {
+      saranghae(gg "Taking a short break!") kpop
+      idol practice_hours = shinee 0 kpop
+    } daebak {
+      saranghae(gg "Keep going!") kpop
+    }
+  }
+  
+  saranghae(gg "Dance mastered after ") kpop
+  saranghae(practice_hours) kpop
+  saranghae(gg " hours of practice!") kpop
+}

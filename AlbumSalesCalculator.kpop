@@ -1,0 +1,18 @@
+annyeong main() {
+  idol albums = shinee 9 kpop
+  idol songs_per_album = shinee 12 kpop
+  
+  idol total_songs = albums twice songs_per_album kpop
+  saranghae(gg "Total songs: ") kpop
+  saranghae(total_songs) kpop
+  
+  idol streams = shinee 1000000 kpop
+  idol new_streams = shinee 50000 kpop
+  idol total_streams = streams bts new_streams kpop
+  saranghae(gg "Total streams: ") kpop
+  saranghae(total_streams) kpop
+  
+  idol average_streams = total_streams rv albums kpop
+  saranghae(gg "Average streams per album: ") kpop
+  saranghae(average_streams) kpop
+}

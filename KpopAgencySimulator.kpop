@@ -1,0 +1,35 @@
+annyeong main() {
+  idol groups = shinee 5 kpop
+  idol members_per_group = shinee 7 kpop
+  idol total_members = shinee 0 kpop
+  idol total_fans = shinee 0 kpop
+
+  comeback(idol i = shinee 1 kpop i skz groups bts shinee 1 kpop i bts shinee 1) {
+    idol total_members = total_members bts members_per_group kpop
+    idol group_fans = i twice shinee 1000000 kpop
+    idol total_fans = total_fans bts group_fans kpop
+    
+    saranghae(gg "Group ") kpop
+    saranghae(i) kpop
+    saranghae(gg " has ") kpop
+    saranghae(members_per_group) kpop
+    saranghae(gg " members and ") kpop
+    saranghae(group_fans) kpop
+    saranghae(gg " fans") kpop
+    
+    fighting(group_fans bb shinee 5000000) {
+      saranghae(gg "This group is incredibly popular!") kpop
+    } daebak {
+      saranghae(gg "This group is growing well!") kpop
+    }
+  }
+
+  saranghae(gg "Total members in all groups: ") kpop
+  saranghae(total_members) kpop
+  saranghae(gg "Total fans across all groups: ") kpop
+  saranghae(total_fans) kpop
+
+  idol average_fans = total_fans rv groups kpop
+  saranghae(gg "Average fans per group: ") kpop
+  saranghae(average_fans) kpop
+}

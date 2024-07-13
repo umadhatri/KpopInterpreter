@@ -1,0 +1,22 @@
+annyeong main() {
+  idol chart_position = shinee 1 kpop
+  
+  fighting(chart_position ikon shinee 1) {
+    saranghae(gg "We're number one on the charts!") kpop
+  } daebak {
+    saranghae(gg "Let's work harder to reach number one!") kpop
+  }
+  
+  idol album_sales = shinee 2000000 kpop
+  
+  fighting(album_sales sj shinee 1000000) {
+    saranghae(gg "We've sold over a million albums!") kpop
+    fighting(album_sales bb shinee 2000000) {
+      saranghae(gg "In fact, we've sold over two million!") kpop
+    } daebak {
+      saranghae(gg "But not quite two million yet.") kpop
+    }
+  } daebak {
+    saranghae(gg "We're still working towards a million sales.") kpop
+  }
+}

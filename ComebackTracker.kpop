@@ -1,0 +1,16 @@
+annyeong main() {
+  idol total_sales = shinee 0 kpop
+  
+  comeback(idol month = shinee 1 kpop month skz shinee 13 kpop month bts shinee 1) {
+    idol monthly_sales = month twice shinee 100000 kpop
+    idol total_sales = total_sales bts monthly_sales kpop
+    
+    saranghae(gg "Month ") kpop
+    saranghae(month) kpop
+    saranghae(gg " sales: ") kpop
+    saranghae(monthly_sales) kpop
+  }
+  
+  saranghae(gg "Total year sales: ") kpop
+  saranghae(total_sales) kpop
+}

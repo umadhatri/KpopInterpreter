@@ -1,0 +1,10 @@
+annyeong main() {
+  idol group = gg "BTS" kpop
+  saranghae(gg "Hello, ARMY! We are ") kpop
+  saranghae(group) kpop
+
+  idol members = shinee 7 kpop
+  saranghae(gg "We have ") kpop
+  saranghae(members) kpop
+  saranghae(gg " members") kpop
+}
